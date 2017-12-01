@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0">
+        <title>Farmers' Market Walkthrough</title>
+        <link rel="stylesheet" type="text/css" href="css/foodtruck.css"/>
+        <script src="scripts/modernizr.js"></script>
+        </head>
+    
+    <body class="loading">
+        <div class="viewport-units-support">
+            <span>This demo will not run, your browser doesn't support</span>
+            <strong>vw</strong>
+            <span>and</span>
+            <strong>vh</strong>
+            <span>units!</span>
+        </div>
+        <div id="s2p-container" class="s2p-container"></div>
+        <div class="loader">Loading 0%</div>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <script src="scripts/s2p.js"></script>
+        <script>
+            var s2p = new Scroll2Play('s2p-container', 'foodtruckcont-lores', 'foodtruckcont-hires','File', 600, 'jpg', '0');
+            // console.log("s2p:");
+            // console.log(s2p)
+            s2p.onprogress = function(progress) {
+                var loader = document.querySelector('.loader');
+                loader.innerHTML = 'Loading ' + Math.floor(progress * 100) + '%';
+            }
+            s2p.onload = function() {
+                document.body.classList.remove('loading');
+            }
+            s2p.load();
+        </script>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"><a href="./hooded.html" id="left" class="btn btn-lg btn-primary btn-block" role="button"><img src="buttonImages/leftArrow.png" width="300px" height="200px"></a>
+        <a href="./tents.html" id="fwd" class="btn btn-lg btn-primary btn-block" role="button"><img src="buttonImages/forwardArrow.png" width="200px" height="300px"></a></section>
+    </body>
+
+</html>

@@ -1,0 +1,82 @@
+html {
+                 height: 100%;
+                background-color:transparent;
+            }
+            body {
+                position: relative;
+                margin:0;
+                background-color:#323c46;
+                color:#FFFFFF;
+                font-family: Courier;
+            }
+            a {
+                text-decoration:none;
+                color:#72D5A1;
+            }
+            .loader {
+                display:none;
+            }
+            body.loading .loader {
+                display: block;
+            }
+            .s2p-container {
+                opacity:1;
+                -webkit-transition: opacity 2s ease-in-out;
+                -moz-transition: opacity 2s ease-in-out;
+                -ms-transition: opacity 2s ease-in-out;
+                -o-transition: opacity 2s ease-in-out;
+                transition: opacity 2s ease-in-out;
+            }
+            body.loading .s2p-container {
+                opacity:0;
+            }
+            body.loading .page {
+                display:none;
+            }
+            .loader, .page {
+                position:relative;
+                width:100vw;
+                height:100vh;
+                line-height:100vh;
+                text-align:center;
+                font-size:8vw;
+            }
+            .page.first, .page.last {
+                background-color:#323c46;
+            }
+            .viewport-units-support {
+                display: none;
+            }
+            .no-cssvhunit .viewport-units-support {
+                display: block;
+                background-color:rgb(255, 224, 0);
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                color: #FF0000;
+                font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;
+            }
+.btn{
+  background-color: transparent;
+}
+
+.caption{
+    color: black;
+    text-align: center;
+    font-family: "Helvetica Neue";
+    font-size: 18px;
+}
+
+#speechButton{
+    margin-left: 750px;
+    margin-bottom: 150px;
+  padding: 0; 
+  border: none;
+  outline: none;
+  background: none;
+}
+/*
+#continue{
+    color: black;
+    font-family: "Helvetica Neue";
+}*/

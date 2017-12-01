@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/foodtruck.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+        <!-- <script>
+            $(function() {
+    $(".video").click(function () {
+      var theModal = $(this).data("target"),
+      videoSRC = $(this).attr("data-video"),
+      videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+      $(theModal + ' iframe').attr('src', videoSRCauto);
+      $(theModal + ' button.close').click(function () {
+        $(theModal + ' iframe').attr('src', videoSRC);
+      });
+    });
+  });
+
+</script> -->
+</head>
+    
+    <body class="loading">
+        <div class="viewport-units-support">
+            <span>This demo will not run, your browser doesn't support</span>
+            <strong>vw</strong>
+            <span>and</span>
+            <strong>vh</strong>
+            <span>units!</span>
+        </div>
+        <div id="s2p-container" class="s2p-container"></div>
+        <div class="loader">Loading 0%</div>
+        <section class="page first">Scroll to walk!&#9660;</section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <section class="page"></section>
+        <script src="scripts/s2p.js"></script>
+        <script>
+            var s2p = new Scroll2Play('s2p-container', 'foodtruck-lores', 'foodtruck-hires','File', 400, 'jpg', '0');
+            // console.log("s2p:");
+            // console.log(s2p)
+            s2p.onprogress = function(progress) {
+                var loader = document.querySelector('.loader');
+                loader.innerHTML = 'Loading ' + Math.floor(progress * 100) + '%';
+            }
+            s2p.onload = function() {
+                document.body.classList.remove('loading');
+            }
+            s2p.load();
+        </script>
+        <section class="page"></section>
+        <section class="page"><!-- <button id="speechButton" class="btn btn-lg video" role="button" data-video="https://www.youtube.com/embed/ipXsT_CbxGA" data-toggle="modal" data-target="#videoModal"><img src="buttonImages/speechBubbleLeft.png" width="150px" height="150px"></button> -->
+        <a href="./grant.html" id="speechButton" class="btn" role="button"><img src="buttonImages/speechBubbleLeft.png" width="150px" height="150px"></a>
+        </section>
+        <!-- <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <iframe width="100%" height="350px" src="" frameborder="0" allowfullscreen></iframe>
+        </div> -->
+        <!-- </div>
+        </div> -->
+  <!--   </div> -->
+    </body>
+
+</html>
